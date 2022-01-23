@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["es6", "dom", "esnext", "ES2015", "ES2020", "ESNext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noEmit": true,
+    "paths": {
+      "@artifacts/*": ["artifacts/*"],
+      "@constants/*": ["src/constants/*"],
+      "@generated/*": ["src/generated/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@lib/*": ["src/lib/*"],
+      "@state/*": ["src/state/*"],
+      "@themes/*": ["src/themes/*"],
+      "typechain/*": ["typechain/*"],
+      "types/*": ["src/types/*"],
+      "@utilities/*": ["src/utilities/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"
+  },
+  "exclude": ["node_modules"],
+  "files": ["./hardhat.config.ts"],
+  "include": ["src/**/*", "tasks/**/*", "test/**/*", "typechain/**/*", "types/**/*", "types.d.ts"]
+}
